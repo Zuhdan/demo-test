@@ -1,0 +1,9 @@
+package rules
+import com.tdd.example.demo.model.Product;
+rule "hello"
+when
+$p: Product()
+eval(true)
+then
+$p.setStatus("Sold");
+end
